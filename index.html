@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Management Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <h1>Project Management Dashboard 🛠️</h1>
+        <button id="theme-toggle" class="btn">Switch to Dark Theme</button>
+    </header>
+
+    <main class="dashboard">
+        <section class="tasks-section">
+            <h2>Task Tracker</h2>
+            <select id="filter-status" class="filter">
+                <option value="All">All Tasks</option>
+                <option value="Pending">Pending</option>
+                <option value="In Progress">In Progress</option>
+                <option value="Completed">Completed</option>
+            </select>
+            <div class="task-list" id="task-list"></div>
+            <button id="add-task-btn" class="btn">Add New Task</button>
+        </section>
+
+        <div class="info-section">
+            <section class="milestones-section">
+                <h2>Milestone Progress</h2>
+                <div class="progress-bar-container">
+                    <div class="progress-bar" id="progress-bar"></div>
+                </div>
+                <p class="progress-text" id="progress-text">0% Completed</p>
+            </section>
+
+            <section class="stats-section">
+                <h2>Task Statistics</h2>
+                <p>Total Tasks: <span id="total-tasks">0</span></p>
+                <p>Completed Tasks: <span id="completed-tasks">0</span></p>
+                <p>Pending Tasks: <span id="pending-tasks">0</span></p>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Project Management Dashboard. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
